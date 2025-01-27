@@ -140,7 +140,7 @@ const App: Component = () => {
       </video>
 
       {/* Content */}
-      <div class="relative h-[80vh] flex flex-col justify-between px-[20vw] pt-[25vh]">
+      <div class="relative h-[55vh] flex flex-col justify-between px-[20vw] pt-[25vh]">
         <div>
           <div class="flex items-baseline gap-3 mb-4">
             <h1 class="text-6xl font-bold text-black font-heading">Nari</h1>
@@ -150,20 +150,17 @@ const App: Component = () => {
             Generate lifelike dialogue with custom voices
           </h2>
         </div>
-        <div class="flex flex-col pb-56">
-          <div class="flex flex-col items-center gap-3 mb-3 text-[1.1rem] font-light">
-            <p class="text-center font-body">
-              <span class="">like a cream that also has some structure</span>{" "}
-              <span class="italic text-gray-600">Yes. Okay.</span>{" "}
-              <span class="">It's like it's a particle and a wave.</span>{" "}
-              <span class="italic text-gray-600">Yep, yep.</span>{" "}
-              <span class="">But like...</span>
-            </p>
-          </div>
 
-          <div class="flex flex-col items-center gap-3">
-            <AudioPlayer src={landing} />
-          </div>
+        <div class="flex flex-col items-center gap-3 mb-3 text-[1.1rem] font-light translate-y-[50%]">
+          <p class="text-center font-body">
+            <span class="">like a cream that also has some structure</span>{" "}
+            <span class="italic text-gray-600">Yes. Okay.</span>{" "}
+            <span class="">It's like it's a particle and a wave.</span>{" "}
+            <span class="italic text-gray-600">Yep, yep.</span>{" "}
+            <span class="">But like...</span>
+          </p>
+
+          <AudioPlayer src={landing} />
         </div>
       </div>
     </div>
