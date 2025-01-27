@@ -84,7 +84,7 @@ const AudioPlayer: Component<{ src: string }> = (props) => {
   };
 
   return (
-    <div class="w-[500px] bg-transparent rounded-xl p-4">
+    <div class="w-full md:w-[500px] bg-transparent rounded-xl p-4">
       <div class="flex items-center gap-4">
         <button
           onClick={togglePlay}
@@ -117,7 +117,7 @@ const AudioPlayer: Component<{ src: string }> = (props) => {
           />
         </div>
 
-        <div class="text-sm text-black font-body whitespace-nowrap">
+        <div class="text-xs md:text-sm text-black font-body whitespace-nowrap">
           {formatTime(currentTime())} / {formatTime(duration())}
         </div>
       </div>
@@ -140,19 +140,19 @@ const App: Component = () => {
       </video>
 
       {/* Content */}
-      <div class="relative h-[55vh] flex flex-col justify-between px-[20vw] pt-[25vh]">
+      <div class="relative h-[55vh] flex flex-col justify-between md:px-[20vw] px-[5vw] md:pt-[25vh] pt-[10vh]">
         <div>
           <div class="flex items-baseline gap-3 mb-4">
-            <h1 class="text-6xl font-bold text-black font-heading">Nari</h1>
-            <span class="text-lg text-gray-500 font-heading">v0.1</span>
+            <h1 class="text-5xl md:text-6xl font-bold text-black font-heading">Nari</h1>
+            <span class="text-base md:text-lg text-gray-500 font-heading">v0.1</span>
           </div>
-          <h2 class="text-3xl text-black font-heading font-bold">
+          <h2 class="text-xl md:text-3xl text-black font-heading font-bold">
             Generate lifelike dialogue with custom voices
           </h2>
         </div>
 
-        <div class="flex flex-col items-center gap-3 mb-3 text-[1.1rem] font-light translate-y-[50%]">
-          <p class="text-center font-body">
+        <div class="flex flex-col items-center gap-3 mb-3 text-sm md:text-[1.1rem] font-light translate-y-[50%]">
+          <p class="text-center font-body px-4 md:px-0">
             <span class="">like a cream that also has some structure</span>{" "}
             <span class="italic text-gray-600">Yes. Okay.</span>{" "}
             <span class="">It's like it's a particle and a wave.</span>{" "}

@@ -10,12 +10,18 @@
     <script src="https://getlaunchlist.com/js/widget.js" defer></script>
     <style>
       .launchlist-widget {
-        position: fixed !important;
-        bottom: 20% !important;
+        position: fixed;
+        bottom: 20%;
         left: 0;
-        transform: translateY(50%) !important;
-        z-index: 50 !important;
-        width: 100% !important;
+        transform: translateY(50%);
+        z-index: 50;
+        width: 100%;
+      }
+
+      @media (max-width: 768px) {
+        .launchlist-widget {
+          bottom: 10%;
+        }
       }
     </style>
   </head>
@@ -23,6 +29,6 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <script src="/src/index.tsx" type="module"></script>
-    <div class="launchlist-widget" data-key-id="jnqfGQ" data-height="100px"></div>
+    <div class="launchlist-widget" data-key-id="jnqfGQ" data-height="180px"></div>
   </body>
 </html>
